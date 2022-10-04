@@ -1,0 +1,15 @@
+:host app-loading {
+  display: none;
+}
+
+:host app-loading.show_loading {
+  display: flex;
+}
+
+:host app-product-list {
+  display: none;
+}
+
+:host app-product-list.show_list {
+  display: flex;
+}

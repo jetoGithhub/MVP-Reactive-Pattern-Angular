@@ -1,0 +1,9 @@
+<div *ngIf="presenter.viewState$ | async as viewState">
+  <app-loading
+    [ngClass]="{ show_loading: viewState.state === 'loading' }"
+  ></app-loading>
+
+  <app-product-list
+    [ngClass]="{ show_list: viewState.state === 'loaded' }"
+  ></app-product-list>
+</div>
