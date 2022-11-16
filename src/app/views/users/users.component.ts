@@ -10,5 +10,7 @@ import { UsersPresenter } from './users.presenter';
 export class UsersComponent implements OnInit {
   constructor(public presenter: UsersPresenter) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.presenter.initialize();
+  }
 }
