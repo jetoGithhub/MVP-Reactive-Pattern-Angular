@@ -1,4 +1,4 @@
-export interface ProductModel {
+export interface UserModel {
   name: string;
   description: string;
   image: string;
