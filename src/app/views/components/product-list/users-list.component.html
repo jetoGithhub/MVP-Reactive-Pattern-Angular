@@ -1,29 +1,11 @@
 <div class="card-list">
-  <div class="card-list_item">
+  <div class="card-list_item" *ngFor="let user of users; index as i">
     <div class="image">
-      <img [src]="img" />
+      <img [src]="user.avatar" />
     </div>
     <div class="description">
-       <p>Product 1</p>
-       <p>Descripcion product 1</p>
+      <p>{{ user.name }}</p>
+      <p>{{ user.email }}</p>
     </div>
   </div>
-  <div class="card-list_item">
-  <div class="image">
-    <img [src]="img" />
-  </div>
-  <div class="description">
-     <p>Product 1</p>
-     <p>Descripcion product 1</p>
-  </div>
-</div>
-<div class="card-list_item">
-<div class="image">
-  <img [src]="img" />
-</div>
-<div class="description">
-   <p>Product 1</p>
-   <p>Descripcion product 1</p>
-</div>
-</div>
 </div>

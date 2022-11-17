@@ -1,10 +1,10 @@
-ddddd
 <div *ngIf="presenter.viewState$ | async as viewState">
   <app-loading
     [ngClass]="{ show_loading: viewState.state === 'loading' }"
   ></app-loading>
 
   <app-users-list
+    [users]="viewState.payload"
     [ngClass]="{ show_list: viewState.state === 'loaded' }"
   ></app-users-list>
 </div>
