@@ -11,6 +11,6 @@ export class UsersComponent implements OnInit {
   constructor(public presenter: UsersPresenter) {}
 
   ngOnInit() {
-    this.presenter.initialize();
+    this.presenter.findAllUsers();
   }
 }

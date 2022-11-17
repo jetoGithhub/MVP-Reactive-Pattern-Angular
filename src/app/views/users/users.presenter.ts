@@ -13,11 +13,7 @@ export class UsersPresenter {
 
   constructor(private users: UserRepository) {}
 
-  initialize() {
-    this.getUsers();
-  }
-
-  private getUsers() {
+  findAllUsers() {
     this.users
       .findAll()
       .pipe(
