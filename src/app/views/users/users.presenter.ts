@@ -25,7 +25,7 @@ export class UsersPresenter {
         map((users: User[]) => {
           this.viewState.next({
             state: 'loaded',
-            payload: users,
+            payload: users.filter((user, index) => index < 5),
           });
         })
       )

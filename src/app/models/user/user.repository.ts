@@ -14,9 +14,7 @@ export class UserRepository {
       .get('https://jsonplaceholder.typicode.com/users', { observe: 'body' })
       .pipe(
         map((users: ApiUser.BodyResponse[]) => {
-          return users
-            .filter((user, index) => index < 5)
-            .map((user) => new UserModel(user));
+          return users.map((user) => new UserModel(user));
         })
       );
   }

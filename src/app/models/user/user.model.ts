@@ -1,8 +1,6 @@
 import { ApiUser } from '../../core/domain/apis-models/api-user.model';
 import { User } from '../../core/domain/user.model';
 
-
-
 export class UserModel implements User {
   readonly name: string;
   readonly nickname: string;
