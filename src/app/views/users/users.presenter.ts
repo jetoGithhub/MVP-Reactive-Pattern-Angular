@@ -17,7 +17,7 @@ export class UsersPresenter {
     this.users
       .findAll()
       .pipe(
-        delay(500),
+        delay(700),
         map((users: User[]) => {
           this.viewState.next({
             state: 'loaded',
